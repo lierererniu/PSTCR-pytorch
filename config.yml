@@ -1,0 +1,37 @@
+datasets_dir: ./dataset/train/gt/
+test_dir: D:\cloudromove\dataset\test\
+tmask_dir: D:\cloudromove\dataset\test\
+train_list: train_list.txt
+test_list: test_list.txt
+out_dir: ./testresult/
+mask_dir: ./dataset/train/mask/
+mask_dir_name: ['1', '2', '3', '4', '5']
+years: ['1', '2', '3', '4', '5']
+cloud: ['20130512', '20130613', '20130731', '20130917', '20131120']
+seeds: [11, 23, 35, 48]
+size: [1.2, 1.5, 1.8, 2]
+
+cuda: True
+gpu_ids: [0]
+low_index: 0.2
+high_index: 0.3  #云量
+train_size: 1
+validation_size: 0.05 # 验证集大小是占训练集的百分比
+batchsize: 3
+validation_batchsize: 1
+is_test: False
+is_train: True
+is_save_pre: False
+epoch: 200
+width: 40
+height: 40
+threads: 4
+lr: 0.0005
+beta1: 0.5
+lamb: 100
+is_iter: True
+in_ch: 1
+out_ch: 1
+nums_res: 3
+manualSeed: 0
+snapshot_interval: 20
